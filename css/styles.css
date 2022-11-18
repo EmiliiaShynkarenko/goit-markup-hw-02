@@ -10,7 +10,11 @@
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
     --secondary-bcg-color: #2F303A;
+    --grey-color-btn-bcg: #F5F4FA;
+    --black-color: #000;
+    --hero-btn-color: #188CE8;
 }
+
 
 
 body {
@@ -31,15 +35,28 @@ body {
     list-style: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 /* header */
 
 .logo {
+    color: var(--black-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #000;
+    text-decoration: none;
 }
 
 .logo-part {
@@ -52,6 +69,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .nav-link.current {
@@ -71,6 +89,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 /* footer  */
@@ -91,7 +110,8 @@ body {
 }
 
 .address-link {
-    color: var(--primary-white-color)
+    color: var(--primary-white-color);
+    text-decoration: none;
 }
 
 .address-link:hover,
@@ -106,7 +126,7 @@ body {
 
 .footer-contact-link {
     color:rgba(255, 255, 255, 0.6);
-    ;
+    text-decoration: none;
 }
 
 /* Студія */
@@ -135,12 +155,16 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 }
 
-/* section  */
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hero-btn-color);
+}
+
+/* sections  */
 
 .features-title,
 .work-title,
@@ -171,7 +195,7 @@ body {
 /* team  */
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--grey-color-btn-bcg);
 }
 
 .team-card {
@@ -197,7 +221,7 @@ body {
 /* portfolio page */
 
 .button {
-    background-color: #F5F4FA;
+    background-color:var(--grey-color-btn-bcg);
     color: var(--primary-text-color);
     cursor: pointer;
     font-family: inherit;
@@ -214,7 +238,12 @@ body {
     color: var(--primary-white-color);
 }
 
+.project-link {
+    text-decoration: none;
+}
+
 .project-name {
+    color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -222,7 +251,7 @@ body {
 }
 
 .project-type {
-color: var(--secondary-text-color);
-font-size: 16px;
-line-height: 1.88;
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
 }
